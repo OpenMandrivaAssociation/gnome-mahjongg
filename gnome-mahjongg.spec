@@ -34,7 +34,7 @@ matching identical tiles.
 %find_lang %{name} --with-gnome 
 
 %files -f %{name}.lang
-%license COPYING
+%doc COPYING
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.mahjongg.gschema.xml
 %{_mandir}/man6/%{name}.6*

@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   gnome-mahjongg-3.14.1.tar.xz: 0aac19992138d66514d98824cffdd76af656a572
+sources:
+  gnome-mahjongg-3.16.0.tar.xz: 5a21964abfdbe33c610ce9ec3ce149c06c9a76c7

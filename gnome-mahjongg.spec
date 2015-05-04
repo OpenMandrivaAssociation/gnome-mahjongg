@@ -31,7 +31,7 @@ matching identical tiles.
 %install
 %makeinstall_std
 
-%find_lang %{name} --with-gnome --with-help
+%find_lang %{name} --with-gnome 
 
 %files -f %{name}.lang
 %license COPYING

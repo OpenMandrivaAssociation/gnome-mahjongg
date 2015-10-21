@@ -41,7 +41,7 @@ matching identical tiles.
 %{_mandir}/man6/%{name}.6*
 %{_bindir}/%{name}
 %{_datadir}/%{name}
-%{_iconsdir}/*/*/apps/%{name}.*
+%{_iconsdir}/*/*/apps/%{name}*.*
 %{_datadir}/appdata/%{name}.appdata.xml
 
 

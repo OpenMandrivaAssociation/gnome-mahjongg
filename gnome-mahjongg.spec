@@ -1,7 +1,7 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-mahjongg
-Version:	3.16.0
+Version:	3.18.0
 Release:	3
 Summary:	GNOME Mahjongg game
 License:	GPLv2+ and CC-BY-SA
@@ -31,7 +31,7 @@ matching identical tiles.
 %install
 %makeinstall_std
 
-%find_lang %{name} --with-gnome 
+%find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
 %doc COPYING

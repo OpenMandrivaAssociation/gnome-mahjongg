@@ -15,7 +15,6 @@ BuildRequires:  gettext
 BuildRequires:  meson
 BuildRequires:	libxml2-utils
 BuildRequires:  vala
-BuildRequires:  
 Obsoletes:	gnome-mahjongg-extra-data
 # For help
 Requires:	yelp

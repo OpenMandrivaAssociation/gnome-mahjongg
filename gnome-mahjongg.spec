@@ -1,7 +1,7 @@
 %define _disable_rebuild_configure 1
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
-%define _smp_ncpus_max 2
+%global _smp_ncpus_max 2
 
 Name:		gnome-mahjongg
 Version:	3.34.0

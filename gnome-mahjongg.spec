@@ -11,8 +11,11 @@ URL:		https://wiki.gnome.org/Apps/Mahjongg
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
+BuildRequires:  gettext
 BuildRequires:  meson
 BuildRequires:	libxml2-utils
+BuildRequires:  vala
+BuildRequires:  
 Obsoletes:	gnome-mahjongg-extra-data
 # For help
 Requires:	yelp

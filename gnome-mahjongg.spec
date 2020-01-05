@@ -16,6 +16,8 @@ BuildRequires:  gettext
 BuildRequires:  meson
 BuildRequires:	libxml2-utils
 BuildRequires:  vala
+# For fix build issue:  "error: Package `librsvg-2.0' not found in specified Vala API directories or GObject-Introspection GIR directories" (penguin)
+BuildRequires:  librsvg-vala-devel
 Obsoletes:	gnome-mahjongg-extra-data
 # For help
 Requires:	yelp

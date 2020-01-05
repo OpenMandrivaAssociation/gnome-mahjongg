@@ -41,13 +41,13 @@ matching identical tiles.
 
 %files -f %{name}.lang
 %doc COPYING
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/glib-2.0/schemas/org.gnome.mahjongg.gschema.xml
+%{_datadir}/applications/org.gnome.Mahjongg.desktop
+%{_datadir}/glib-2.0/schemas/org.gnome.Mahjongg.gschema.xml
 %{_mandir}/man6/%{name}.6*
 %{_bindir}/%{name}
 %{_datadir}/%{name}
-%{_iconsdir}/*/*/apps/%{name}*.*
-%{_datadir}/appdata/%{name}.appdata.xml
+%{_iconsdir}/*/*/apps/org.gnome.Mahjongg*.*
+%{_datadir}/metainfo/org.gnome.Mahjongg.appdata.xml
 
 
 %changelog

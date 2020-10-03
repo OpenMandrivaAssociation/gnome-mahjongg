@@ -2,7 +2,7 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-mahjongg
-Version:	3.36.2
+Version:	3.38.1
 Release:	1
 Summary:	GNOME Mahjongg game
 License:	GPLv2+ and CC-BY-SA

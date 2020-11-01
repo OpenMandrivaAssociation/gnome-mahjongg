@@ -11,6 +11,7 @@ URL:		https://wiki.gnome.org/Apps/Mahjongg
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:  appstream-util
 BuildRequires:  itstool
+BuildRequires:  gtk-update-icon-cache
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  gettext

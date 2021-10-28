@@ -3,7 +3,7 @@
 
 Name:		gnome-mahjongg
 Version:	3.38.3
-Release:	2
+Release:	3
 Summary:	GNOME Mahjongg game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Puzzles
@@ -32,7 +32,9 @@ matching identical tiles.
 %setup -q
 
 %build
-%meson
+%meson  \
+          -Dcompile-schemas=disabled \
+          -Dupdate-icon-cache=disabled
 %meson_build
 
 %install

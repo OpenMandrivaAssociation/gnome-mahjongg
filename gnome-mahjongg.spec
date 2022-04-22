@@ -9,6 +9,8 @@ License:	GPLv2+ and CC-BY-SA
 Group:		Games/Puzzles
 URL:		https://wiki.gnome.org/Apps/Mahjongg
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+# Upstream patch to fix compilation with meson 0.60
+Patch0:   https://gitlab.gnome.org/GNOME/gnome-mahjongg/-/commit/a2037b0747163601a5d5b57856d037eecf3a4db7.patch
 BuildRequires:  appstream-util
 BuildRequires:  itstool
 BuildRequires:  gtk-update-icon-cache
@@ -29,7 +31,7 @@ Mahjongg is a simple pattern recognition game. You score points by
 matching identical tiles.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %meson  \

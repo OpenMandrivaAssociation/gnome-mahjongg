@@ -12,21 +12,20 @@ context in GameView.find_tile().
  src/game-view.vala | 4 ++--
  1 file changed, 2 insertions(+), 2 deletions(-)
 
-diff --git a/src/game-view.vala b/src/game-view.vala
-index bc4f0c4..ab04107 100644
---- a/src/game-view.vala
-+++ b/src/game-view.vala
-@@ -324,7 +324,7 @@ public class GameView : Gtk.DrawingArea
-             return;
+diff -uraN gnome-mahjongg-3.38.3/src/game-view.vala omv-gnome-mahjongg-3.38.3/src/game-view.vala
+--- gnome-mahjongg-3.38.3/src/game-view.vala	2020-11-01 10:39:32.693650200 +0100
++++ omv-gnome-mahjongg-3.38.3/src/game-view.vala	2023-04-30 16:07:19.165265774 +0200
+@@ -287,7 +287,7 @@
+             return false;
  
          /* Get the tile under the square */
--        var tile = find_tile ((uint) event_x, (uint) event_y);
+-        var tile = find_tile ((uint) event.x, (uint) event.y);
 +        var tile = find_tile (event_x, event_y);
  
          /* If not a valid tile then ignore the event */
          if (tile == null || !game.tile_can_move (tile))
-@@ -355,7 +355,7 @@ public class GameView : Gtk.DrawingArea
-         queue_draw();
+@@ -325,7 +325,7 @@
+         return false;
      }
  
 -    private Tile? find_tile (uint x, uint y)
@@ -34,5 +33,3 @@ index bc4f0c4..ab04107 100644
      {
          /* Render a 1x1 image where the cursor is using a different color for each tile */
          var surface = new Cairo.ImageSurface (Cairo.Format.RGB24, 1, 1);
--- 
-GitLab

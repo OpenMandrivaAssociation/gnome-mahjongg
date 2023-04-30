@@ -1,0 +1,38 @@
+From be2e46cc68a865669e462449dd5331016a49e36c Mon Sep 17 00:00:00 2001
+From: Chris Mayo <aklhfex@gmail.com>
+Date: Tue, 18 Apr 2023 19:46:57 +0100
+Subject: [PATCH] Fix selecting a tile since cairo 1.17.8
+
+cairo 1.17.8 includes a fix for out of range coordinates [1] which
+exposed a problem with the values used to translate the
+context in GameView.find_tile().
+
+[1] 47a21c6e3 ("Clamp path coordinates", 2022-05-15)
+---
+ src/game-view.vala | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/game-view.vala b/src/game-view.vala
+index bc4f0c4..ab04107 100644
+--- a/src/game-view.vala
++++ b/src/game-view.vala
+@@ -324,7 +324,7 @@ public class GameView : Gtk.DrawingArea
+             return;
+ 
+         /* Get the tile under the square */
+-        var tile = find_tile ((uint) event_x, (uint) event_y);
++        var tile = find_tile (event_x, event_y);
+ 
+         /* If not a valid tile then ignore the event */
+         if (tile == null || !game.tile_can_move (tile))
+@@ -355,7 +355,7 @@ public class GameView : Gtk.DrawingArea
+         queue_draw();
+     }
+ 
+-    private Tile? find_tile (uint x, uint y)
++    private Tile? find_tile (double x, double y)
+     {
+         /* Render a 1x1 image where the cursor is using a different color for each tile */
+         var surface = new Cairo.ImageSurface (Cairo.Format.RGB24, 1, 1);
+-- 
+GitLab

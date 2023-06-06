@@ -35,9 +35,7 @@ matching identical tiles.
 %autosetup -p1
 
 %build
-%meson  \
-          -Dcompile-schemas=disabled \
-          -Dupdate-icon-cache=disabled
+%meson
 %meson_build
 
 %install

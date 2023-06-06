@@ -15,6 +15,7 @@ Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version
 BuildRequires:  appstream-util
 BuildRequires:  itstool
 BuildRequires:  gtk-update-icon-cache
+BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  gettext

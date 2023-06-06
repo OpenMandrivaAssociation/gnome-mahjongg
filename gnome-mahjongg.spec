@@ -4,23 +4,22 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:		gnome-mahjongg
-Version:	3.38.3
-Release:	6
+Version:	3.40.0
+Release:	1
 Summary:	GNOME Mahjongg game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Puzzles
 URL:		https://wiki.gnome.org/Apps/Mahjongg
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-# Upstream patch to fix compilation with meson 0.60
-Patch0:   https://gitlab.gnome.org/GNOME/gnome-mahjongg/-/commit/a2037b0747163601a5d5b57856d037eecf3a4db7.patch
+
 BuildRequires:  appstream-util
 BuildRequires:  itstool
 BuildRequires:  gtk-update-icon-cache
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
-BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
+BuildRequires:  pkgconfig(gtk+-3.0) >= 3.4.0
+BuildRequires:  pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  gettext
 BuildRequires:  meson
-BuildRequires:	libxml2-utils
+BuildRequires:  libxml2-utils
 BuildRequires:  vala
 # For fix build issue:  "error: Package `librsvg-2.0' not found in specified Vala API directories or GObject-Introspection GIR directories" (penguin)
 BuildRequires:  librsvg-vala-devel

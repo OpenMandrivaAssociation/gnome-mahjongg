@@ -48,6 +48,7 @@ matching identical tiles.
 %doc COPYING
 %{_datadir}/applications/org.gnome.Mahjongg.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.Mahjongg.gschema.xml
+%{_datadir}/dbus-1/services/org.gnome.Mahjongg.service
 %{_mandir}/man6/%{name}.6*
 %{_bindir}/%{name}
 %{_datadir}/%{name}

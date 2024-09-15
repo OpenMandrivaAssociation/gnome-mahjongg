@@ -53,4 +53,4 @@ matching identical tiles.
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_iconsdir}/*/*/apps/org.gnome.Mahjongg*.*
-%{_datadir}/metainfo/org.gnome.Mahjongg.appdata.xml
+#{_datadir}/metainfo/org.gnome.Mahjongg.appdata.xml

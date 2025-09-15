@@ -12,8 +12,10 @@ Group:		Games/Puzzles
 URL:		https://wiki.gnome.org/Apps/Mahjongg
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
+BuildRequires:  appstream
 BuildRequires:  appstream-util
 BuildRequires:  itstool
+BuildRequires:  desktop-file-utils
 BuildRequires:  gtk-update-icon-cache
 BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:  pkgconfig(gtk4)

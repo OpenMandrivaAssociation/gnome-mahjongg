@@ -53,6 +53,6 @@ matching identical tiles.
 %{_datadir}/dbus-1/services/org.gnome.Mahjongg.service
 %{_mandir}/man6/%{name}.6*
 %{_bindir}/%{name}
-%{_datadir}/%{name}
+#{_datadir}/%{name}
 %{_iconsdir}/*/*/apps/org.gnome.Mahjongg*.*
 %{_datadir}/metainfo/org.gnome.Mahjongg.metainfo.xml

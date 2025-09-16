@@ -4,7 +4,7 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:		gnome-mahjongg
-Version:	49.rc
+Version:	49.0
 Release:	1
 Summary:	GNOME Mahjongg game
 License:	GPLv2+ and CC-BY-SA

@@ -4,7 +4,7 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:		gnome-mahjongg
-Version:	49.0.1
+Version:	49.1.1
 Release:	1
 Summary:	GNOME Mahjongg game
 License:	GPLv2+ and CC-BY-SA
@@ -22,7 +22,7 @@ BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  gettext
 BuildRequires:  meson
-BuildRequires:  libxml2-utils
+BuildRequires:  libxml2-utils >= 2.15.2
 BuildRequires:  vala
 # For fix build issue:  "error: Package `librsvg-2.0' not found in specified Vala API directories or GObject-Introspection GIR directories" (penguin)
 BuildRequires:  librsvg-vala-devel

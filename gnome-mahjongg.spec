@@ -5,7 +5,7 @@
 
 Name:		gnome-mahjongg
 Version:	49.1.1
-Release:	2
+Release:	3
 Summary:	GNOME Mahjongg game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Puzzles
